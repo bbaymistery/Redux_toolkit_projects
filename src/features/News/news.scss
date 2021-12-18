@@ -1,0 +1,55 @@
+@import '../../scss/util';
+@import '../../scss/globals';
+
+.news {
+
+    background-color: rgb(240, 242, 245);
+    width: 100%;
+    flex: 0.8 1;
+
+    &_container {
+        padding: 2.1rem;
+
+        .select_box {
+            margin-bottom: 4rem;
+            margin-left: .3rem;
+
+            h4 {
+                color: rgb(24, 21, 226);
+                margin-left: .5rem;
+                margin-bottom: 1rem;
+            }
+
+            .categories {
+                color: black;
+                width: 210px;
+                border: none;
+                cursor: pointer;
+                background-color: rgb(238, 238, 238);
+                padding: 5px;
+                border-radius: 5px;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:hover {
+                    /* background-color:red; */
+                }
+
+                option {
+
+                    font-weight: normal;
+                    display: block;
+                    white-space: nowrap;
+                    min-height: 1.2em;
+                    padding: 0px 2px 1px
+                }
+            }
+        }
+    }
+}
+
+/*
+
+*/

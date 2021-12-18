@@ -1,0 +1,85 @@
+@import '../../../scss/util/';
+@import '../../../scss/globals';
+
+.single_crypto_values {
+    display: flex;
+
+    .left {
+        // border: 1px solid red;
+        padding: 2.5rem 0rem;
+        padding-right: 1.5rem;
+    }
+
+    .right {
+        // border: 1px solid rgb(166, 255, 0);
+        padding: 2.5rem 0rem;
+        padding-left: 1.5rem;
+    }
+
+    .box {
+        .header {
+
+            .title {
+                color: rgb(0, 113, 189);
+                font-weight: bolder;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 1.8rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .desc {
+                line-height: 1.5;
+                color: rgba(0, 0, 0, .85);
+                letter-spacing: 1.5px;
+            }
+        }
+
+        .box_list {
+            margin-top: 2rem;
+
+            ul {
+                li {
+                    display: flex;
+                    border-bottom: 1px solid;
+                    transition: .5s linear;
+                    border-bottom-color: rgb(217, 217, 217);
+                    padding: 1.3rem 1rem;
+                    justify-content: space-between;
+                    user-select: none;
+
+                    //hastag rank    olan teref
+                    .box_left {
+                        // background-color: blue;
+                        display: flex;
+                        align-items: center;
+                        color: rgba(106, 24, 160, 0.85);
+                        cursor: default;
+
+                        .icon {
+                            margin-right: .6rem;
+                            font-size: 1.2rem;
+                        }
+
+                        p {
+
+                            cursor: default;
+                            color: rgb(133, 133, 133);
+                        }
+                    }
+
+
+                    p.box_right {
+                        cursor: default;
+                        color: var(--bg-nav);
+                        font-family: monospace;
+                        font-weight: bold;
+                        font-size: 1rem;
+                    }
+
+
+                }
+
+            }
+        }
+    }
+}

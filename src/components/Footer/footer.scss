@@ -1,0 +1,41 @@
+@import '../../scss/util';
+@import '../../scss/globals';
+
+.footer {
+    flex-basis: 80%;
+    background-color: var(--bg-nav);
+    color: white;
+
+    padding: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 0px;
+
+    .copyRight {
+        color: white;
+        font-weight: bold;
+        cursor: default;
+
+        span {
+            margin-left: 1rem;
+            color: var(--pink);
+        }
+
+
+    }
+
+
+    p {
+        padding: .5rem 0rem;
+        cursor: default;
+        font-weight: bold;
+
+        a {
+            padding: 0rem 1rem;
+            color: rgb(71, 255, 71);
+            font-weight: normal;
+        }
+    }
+}

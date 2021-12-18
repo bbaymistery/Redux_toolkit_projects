@@ -1,0 +1,145 @@
+//aslinda home   icindede trending content olmalidi biz basdan css adlarini sehf yazdk ay7nisida newsCard icin gecerlidi
+.home_trending_content {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding-bottom: 2rem;
+
+    .card.added {
+        // background-color: red !important;
+        background-color: rgb(202, 207, 228);
+
+    }
+
+    .card {
+        // background-color: white;
+        width: 350px;
+        padding: 1rem 1.5rem;
+        border-radius: 20px;
+        transition: .5s ease-out;
+        position: relative;
+        overflow: hidden;
+
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 0px;
+            cursor: default;
+
+            .card_favourites {
+                opacity: 1;
+                transform: translateX(-5px);
+            }
+
+            //eger added olunubsa trengi yesil olacag
+            // .card_favourites.added {
+            //     color: rgb(21, 145, 10);
+            // }
+        }
+
+        .details_btn {
+            background-color: transparent;
+            outline: none;
+            background-color: rgb(33, 29, 36);
+            padding: 3px 5px;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.4s ease;
+            border: none;
+
+            &:hover {
+                transform: scale(.90);
+            }
+
+            &:focus {
+                outline: none;
+                border: none;
+            }
+        }
+
+
+        &_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(240, 240, 240);
+            padding-bottom: 10px;
+
+            &_name {
+                font-size: 16px;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+
+            &_image {
+
+                img {
+                    width: 35px;
+                }
+            }
+
+        }
+
+        &_desc {
+            padding-top: 1.5rem;
+            padding-bottom: .5rem;
+
+            p {
+                letter-spacing: 3px;
+                padding: 1rem 0rem;
+
+                span {
+                    font-weight: 500;
+                }
+
+                span.green {
+                    font-weight: bold;
+                    color: rgb(30, 190, 30);
+                }
+
+                span.red {
+                    font-weight: bold;
+                    color: rgb(255, 24, 24);
+                }
+            }
+
+            .price {}
+        }
+
+        &_favourites {
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+            transition: all 0.5s ease;
+            // opacity: 0;
+            transform: translateX(45px);
+            z-index: 100;
+            cursor: pointer;
+
+            .remove {
+                transition: all 0.5s linear;
+
+                color: rgb(134, 4, 4);
+
+                &:hover {
+                    color: red;
+                }
+            }
+
+            .add {
+                transition: all 0.5s linear;
+
+                color: rgb(9, 83, 19);
+
+                &:hover {
+                    color: rgb(28, 177, 9);
+                }
+            }
+        }
+    }
+}

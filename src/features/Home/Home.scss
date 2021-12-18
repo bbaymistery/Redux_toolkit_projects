@@ -1,0 +1,224 @@
+@import '../../scss/util/';
+@import '../../scss/globals';
+
+.App {
+    .home {
+        background-color: rgb(240, 242, 245);
+        width: 100%;
+        flex: 0.8 1;
+
+        &_container {
+            padding: 2rem 1rem;
+
+            //home header component
+            .home_header {
+                h1 {
+                    padding-bottom: 2rem;
+                }
+
+                &_values {
+                    display: flex;
+
+                    .left {
+                        flex: 1;
+
+                        div {
+                            padding-bottom: 2rem;
+
+                            p {
+                                padding-bottom: 1rem;
+                            }
+
+                            p.text {
+                                color: rgba(0, 0, 0, .65);
+                            }
+
+                            p.desc {
+                                color: var(--text-primary);
+                                font-size: 24px;
+                                font-weight: bold;
+                                letter-spacing: 3px;
+                            }
+                        }
+                    }
+
+                    .right {
+                        flex: 1;
+
+                        div {
+                            padding-bottom: 2rem;
+
+                            p {
+                                padding-bottom: 1rem;
+                            }
+
+                            p.text {
+                                color: rgba(0, 0, 0, .65);
+                            }
+
+                            p.desc {
+                                color: var(--text-primary);
+                                font-size: 24px;
+                                letter-spacing: 3px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            //trending component
+            .home_trending {
+
+                // background-color: coral;
+                &_header {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 2rem 1rem;
+
+                    h1 {
+                        letter-spacing: .3px;
+                        font-weight: bold;
+                        color: var(--bg-nav);
+                    }
+
+                    button {
+                        border: none;
+                        outline: none;
+                        font-size: 24px;
+                        cursor: pointer;
+                        background-color: transparent;
+
+                        a {
+                            color: var(--primary);
+                            transition: .1s ease-in-out;
+
+                            &:hover {
+                                color: var(--pink);
+                            }
+
+                            &:active {
+                                color: violet;
+                            }
+                        }
+                    }
+                }
+
+                //here is card components stle wqhich u can find in trending Card component
+            }
+
+            //news component
+            .home_news {
+                &_header {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 2rem 1rem;
+
+                    h1 {
+                        letter-spacing: .3px;
+                        font-weight: bold;
+                        color: var(--bg-nav);
+                    }
+
+                    button {
+                        border: none;
+                        outline: none;
+                        font-size: 24px;
+                        cursor: pointer;
+                        background-color: transparent;
+
+                        a {
+                            color: var(--primary);
+                            transition: .1s ease-in-out;
+
+                            &:hover {
+                                color: var(--pink);
+                            }
+
+                            &:active {
+                                color: violet;
+                            }
+                        }
+                    }
+                }
+
+                // here is home news content should bee  Ama biz kodu tekrar yazmamak adina home news contenti gonderiyoruz newsCard icine
+            }
+        }
+
+    }
+
+}
+
+/*
+  &_content {
+      // display: grid;
+      // grid-gap: 2rem;
+      // grid-template-columns: repeat(4, 1fr);
+      // justify-items: center;
+      // padding-bottom: 2rem;
+
+      // .card {
+      //     background-color: white;
+      //     width: 350px;
+      //     padding: 1rem 1.5rem;
+      //     border-radius: 20px;
+      //     transition: .5s ease-out;
+
+      //     &:hover {
+      //         cursor: pointer;
+      //         transform: scale(1.05);
+      //         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      //         border-radius: 0px;
+      //     }
+
+
+
+      //     &_header {
+      //         display: flex;
+      //         justify-content: space-between;
+      //         align-items: center;
+      //         border-bottom: 1px solid rgb(240, 240, 240);
+      //         padding-bottom: 10px;
+
+      //         &_name {
+      //             font-size: 16px;
+      //             font-weight: bold;
+      //             letter-spacing: 2px;
+      //         }
+
+      //         &_image {
+      //             img {
+      //                 width: 35px;
+      //             }
+      //         }
+      //     }
+
+      //     &_desc {
+      //         padding-top: 1.5rem;
+      //         padding-bottom: .5rem;
+
+      //         p {
+      //             letter-spacing: 3px;
+      //             padding: 1rem 0rem;
+
+      //             span {
+      //                 font-weight: 500;
+      //             }
+
+      //             span.green {
+      //                 font-weight: bold;
+      //                 color: rgb(30, 190, 30);
+      //             }
+
+      //             span.red {
+      //                 font-weight: bold;
+      //                 color: rgb(255, 24, 24);
+      //             }
+      //         }
+
+      //         .price {}
+      //     }
+      // }
+  }
+*/
